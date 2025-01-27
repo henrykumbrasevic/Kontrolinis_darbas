@@ -29,7 +29,6 @@ public class MyExercises implements Exercises {
 
     @Override
     public List<Integer> consume(Iterator<Integer> iterator) {
-        return null;
         List<Integer> consume = new ArrayList<>();
         for (Integer consum : consume) {
             iterator.next();
@@ -49,10 +48,8 @@ public class MyExercises implements Exercises {
     @Override
     public int computeSumOfNumbers(int i, NumberFilter numberFilter) {
         int sum = 0;
-        for (int num = 0; num < i; num++){
-            if (numberFilter.accept(num)){
-                sum += i;
-            }
+        if (numberFilter.accept(i)){
+            sum+= i;
         }
         return sum;
     }
