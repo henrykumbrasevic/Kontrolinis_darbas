@@ -17,22 +17,24 @@ public class MyExercises implements Exercises {
 
     @Override
     public boolean isEqual(Object o, Object o1) {
+
         return o.equals(o1);
     }
 
     @Override
     public boolean isSameObject(Object o, Object o1) {
+
         return o.equals(o1);
     }
 
     @Override
     public List<Integer> consume(Iterator<Integer> iterator) {
         return null;
-//        List<Integer> consume = new ArrayList<>();
-//        for (Integer consum : consume) {
-//            iterator.next();
-//        }
-//        return consume;
+        List<Integer> consume = new ArrayList<>();
+        for (Integer consum : consume) {
+            iterator.next();
+        }
+        return consume;
     }
 
     @Override
